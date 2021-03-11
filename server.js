@@ -13,9 +13,6 @@ var demoRoutes = require('./routes/demoRoute')
  
 // some dependency
 
-// old
-// app.use(bodyParser.urlencoded({ extended: true }))
-// app.use(bodyParser.json())
 
 //new
 app.use(express.urlencoded({extended: true})); 
