@@ -6,7 +6,7 @@ const helmet = require("helmet");
 const PORT = process.env.PORT || 3000
 
 // all routes
-// var authRoutes = require('./routes/authRoute')
+var demoRoutes = require('./routes/demoRoute')
 
 
 
@@ -47,7 +47,7 @@ app.get('/', (req, res) => {
 })
 
 // use all routes
-// app.use('/', authRoutes)
+app.use('/', demoRoutes)
 
 // for debugging
 app.listen(PORT, () => {
