@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
+    <script src='/js/main.js'></script>
+</head>
+
+<body>
+    hello world<br>
+    <img src="/img/12.jpg" alt="" srcset=""><br>
+    data = <%= data %><br>
+        hasError ?
+        <% if(error){ %>
+            <h4>
+                <%= error %> 😏
+            </h4>
+            <% } else { %>
+                <h2>No error</h2>
+                <% } %>
+
+
+                    <table>
+                        <% for(var i=0; i < arr.length; i++) { %>
+                            <tr>
+                                <td>
+                                    <%= arr[i]%>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </table>
+</body>
+
+</html>
