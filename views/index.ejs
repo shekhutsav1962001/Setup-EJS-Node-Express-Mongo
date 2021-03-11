@@ -34,8 +34,14 @@
                             <% } %>
                     </table>
 
-
-                    <h1>Goto <a href="http://localhost:3000/demo">http://localhost:3000/demo</a></h1>
+                    <% if(localhost){ %>
+                        
+                            <h1>Goto <a href="http://localhost:3000/demo">http://localhost:3000/demo</a></h1>        
+                        
+                        <% } else { %>
+                            <h1>Goto <a href="https://ejssetup.herokuapp.com/demo">https://ejssetup.herokuapp.com/demo</a></h1>        
+                            <% } %>
+                    
 </body>
 
 </html>

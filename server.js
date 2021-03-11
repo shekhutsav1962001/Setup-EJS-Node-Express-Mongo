@@ -40,7 +40,8 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
     // res.send("Hello Utsav from EJS first Server")
     const arr = ['a','b','c','d']
-    res.render('index',{data:"utsav",error:"this is my error", arr:arr})
+    // if you are working on localhost then make it localhost:true 
+    res.render('index',{data:"utsav",error:"this is my error", arr:arr,localhost:false})
 })
 
 // use all routes
